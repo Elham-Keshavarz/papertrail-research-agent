@@ -1,0 +1,36 @@
+{
+  "suite_id": "fairrag_log_anchors_v1",
+  "annotation_status": "provisional_log_derived_unverified",
+  "provenance": "Seeded from the user-provided PaperTrail v1.4.4 local preview/live and targeted hybrid-search logs (Nov 18, 2026). Identified chunk IDs were NOT independently adjudicated against the PDF and do NOT exhaust relevant passages.",
+  "cases": [
+    {
+      "case_id": "fairrag_multifacet_probe",
+      "paper_id": "2510.22344",
+      "question": "Compare FAIR-RAG with traditional RAG and discuss their evaluation metrics and limitations.",
+      "facets": [
+        {
+          "step_id": "retrieve_01",
+          "anchor_chunk_ids": [
+            "2510.22344@edee709f8cbf:p0016:001395-001750:b3e8c63f0886"
+          ],
+          "rationale": "Previously retrieved comparison passage concerning standard RAG query reasoning limits."
+        },
+        {
+          "step_id": "retrieve_02",
+          "anchor_chunk_ids": [
+            "2510.22344@edee709f8cbf:p0013:001629-002012:ec41c1875738"
+          ],
+          "rationale": "Previously retrieved passage stating EM, F1, ACC, and ACCLLM evaluation metrics."
+        },
+        {
+          "step_id": "retrieve_03",
+          "anchor_chunk_ids": [
+            "2510.22344@edee709f8cbf:p0018:003148-003411:2d72db1926a7",
+            "2510.22344@edee709f8cbf:p0018:001818-002188:a01951c2e2c5"
+          ],
+          "rationale": "Targeted hybrid search exposed these page-18 error taxonomy and component-level failure passages; missing from prior model-visible registers."
+        }
+      ]
+    }
+  ]
+}

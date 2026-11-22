@@ -1,0 +1,18 @@
+{
+  "suite_id": "planning_cases_v1",
+  "annotation_status": "synthetic_regression_only",
+  "cases": [
+    {"id":"comparison_limits","question":"Compare FAIR-RAG and traditional RAG and discuss their limitations.","paper_id":"2510.22344","expected_intents":["comparison","limitations"],"requires_comparison":true},
+    {"id":"benchmark_names","question":"Which datasets were used to evaluate FAIR-RAG in the experiments?","paper_id":"2510.22344","expected_intents":["datasets"],"requires_comparison":false},
+    {"id":"sample_count","question":"How many examples per dataset were used for FAIR-RAG benchmark evaluation?","paper_id":"2510.22344","expected_intents":["datasets","sample_size"],"requires_comparison":false},
+    {"id":"reported_metrics","question":"Which metrics were reported in the FAIR-RAG end-to-end evaluation?","paper_id":"2510.22344","expected_intents":["metrics"],"requires_comparison":false},
+    {"id":"retrieval_cycles","question":"What is the maximum number of iterative retrieval refinement cycles in FAIR-RAG?","paper_id":"2510.22344","expected_intents":["iterations"],"requires_comparison":false},
+    {"id":"method_components","question":"Which modules are included in the component ablation study?","paper_id":"2510.22344","expected_intents":["methodology"],"requires_comparison":false},
+    {"id":"failure_analysis","question":"Which architectural failures and limitations are described in FAIR-RAG?","paper_id":"2510.22344","expected_intents":["limitations","methodology"],"requires_comparison":false},
+    {"id":"evidence_assessment","question":"What is Structured Evidence Assessment and how does it guide evidence gathering?","paper_id":"2510.22344","expected_intents":["methodology","evidence","definition"],"requires_comparison":false},
+    {"id":"generic_research","question":"Summarize the central contribution of retrieval-augmented text systems.","expected_intents":["general"],"requires_comparison":false},
+    {"id":"multi_topic","question":"Contrast the model architectures and their evaluation metrics for the two methods.","expected_intents":["comparison","metrics","methodology"],"requires_comparison":true},
+    {"id":"plain_definition","question":"Define retrieval augmentation in the context of language models.","expected_intents":["definition"],"requires_comparison":false},
+    {"id":"explicit_evidence","question":"What evidence supports the reliability of the reported research?","expected_intents":["evidence"],"requires_comparison":false}
+  ]
+}

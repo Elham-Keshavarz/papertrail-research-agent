@@ -1,0 +1,17 @@
+{
+  "kind": "observed_live_summary_unverified",
+  "paper_id": "2510.22344",
+  "provenance": "User-provided PaperTrail v1.4.4 local live log, top-k=3 (2026-11-18). Snapshot is not human adjudication or a new LLM execution.",
+  "status": "partial_answer_unverified",
+  "llm_calls": 1,
+  "accepted_claims": 4,
+  "rejected_claims": 2,
+  "covered_step_ids": [
+    "retrieve_01",
+    "retrieve_02"
+  ],
+  "missing_step_ids": [
+    "retrieve_03"
+  ],
+  "semantic_entailment_verified": false
+}

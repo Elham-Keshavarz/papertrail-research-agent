@@ -1,0 +1,40 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.env
+.env.*
+!.env.example
+data/
+outputs/
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Local runtime and credentials (never publish)
+.streamlit/secrets.toml
+.streamlit/secrets.*
+!.streamlit/config.toml
+**/.ipynb_checkpoints/
+*.pem
+*.p12
+*.pfx
+*.key
+*.sqlite
+*.sqlite3
+*.db
+
+# Test/analysis caches
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# OS scratch files
+Thumbs.db

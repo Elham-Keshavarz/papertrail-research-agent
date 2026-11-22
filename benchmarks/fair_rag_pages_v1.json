@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "suite_id": "fair_rag_pages_v1",
+  "paper_id": "2510.22344",
+  "annotation_status": "provisional",
+  "annotation_unit": "page",
+  "provenance": "Provisional relevance labels drafted from source-cited excerpts in the user's previous local FAIR-RAG retrieval logs. Not an exhaustive, independently adjudicated benchmark; verify labels against the original PDF before publication.",
+  "cases": [
+    {
+      "id": "sea_definition",
+      "question": "What is Structured Evidence Assessment and how does it guide evidence gathering?",
+      "labels": [
+        {"page_number": 2, "note": "Describes SEA's evidence-centric analytical gating and information gap identification."},
+        {"page_number": 7, "note": "Introduces the Structured Evidence Assessment section."},
+        {"page_number": 25, "note": "SEA prompt explains evidence sufficiency checks."}
+      ]
+    },
+    {
+      "id": "evaluation_datasets",
+      "question": "Which four datasets were used to evaluate FAIR-RAG in the experiments?",
+      "labels": [
+        {"page_number": 9, "note": "Experimental Setup: datasets section lists QA benchmarks."},
+        {"page_number": 13, "note": "Table 2 caption names the three multi-hop and one factual dataset."},
+        {"page_number": 14, "note": "A component-analysis table lists all four dataset names."}
+      ]
+    },
+    {
+      "id": "evaluation_sample_size",
+      "question": "How many examples per dataset were used for FAIR-RAG benchmark evaluation?",
+      "labels": [
+        {"page_number": 9, "note": "States that evaluations use a subset of 1000 samples per dataset."},
+        {"page_number": 13, "note": "Reports scores based on 1000 test or development samples."}
+      ]
+    },
+    {
+      "id": "evaluation_metrics",
+      "question": "Which metrics were reported in the FAIR-RAG end-to-end evaluation?",
+      "labels": [
+        {"page_number": 13, "note": "Table 2 caption names EM, F1, script-based accuracy and LLM-as-judge accuracy."}
+      ]
+    },
+    {
+      "id": "iteration_limit",
+      "question": "What is the maximum number of iterative retrieval refinement cycles in FAIR-RAG?",
+      "labels": [
+        {"page_number": 6, "note": "Describes the refinement cycle and its maximum of three iterations."}
+      ]
+    },
+    {
+      "id": "failure_analysis",
+      "question": "What percentages of FAIR-RAG errors are component-level versus architectural failures?",
+      "labels": [
+        {"page_number": 18, "note": "Reports 63.5 percent component-level and 36.5 percent architectural errors."}
+      ]
+    },
+    {
+      "id": "ablation_components",
+      "question": "Which modules are analyzed in the FAIR-RAG component-level ablation study?",
+      "labels": [
+        {"page_number": 14, "note": "Table 3 identifies Query Decomposition, Evidence Filtering, SEA and Query Refinement."}
+      ]
+    },
+    {
+      "id": "sea_sufficiency_prompt",
+      "question": "What does the Structured Evidence Assessment agent determine from gathered filtered evidence?",
+      "labels": [
+        {"page_number": 25, "note": "SEA prompt assesses whether available evidence can support a complete faithful answer."}
+      ]
+    }
+  ]
+}

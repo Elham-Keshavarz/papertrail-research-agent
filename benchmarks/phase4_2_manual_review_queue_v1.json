@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "suite_id": "fairrag_log_anchors_v1",
+  "purpose": "Manual PDF source adjudication queue; not an automatic scoring file",
+  "annotation_status": "pending_human_pdf_review",
+  "provenance": "Exact chunk IDs from prior user-provided offline logs. Reviewers must read the PDF itself; no examples here are asserted as verified.",
+  "paper_id": "2510.22344",
+  "paper_url": "https://arxiv.org/pdf/2510.22344",
+  "entries": [
+    {
+      "facet": "comparison",
+      "page_number": 16,
+      "chunk_id": "2510.22344@edee709f8cbf:p0016:001395-001750:b3e8c63f0886",
+      "reviewer_a": {"support_status": "pending", "source_quote_verified": null},
+      "reviewer_b": {"support_status": "pending", "source_quote_verified": null},
+      "adjudication": "pending"
+    },
+    {
+      "facet": "metrics",
+      "page_number": 13,
+      "chunk_id": "2510.22344@edee709f8cbf:p0013:001629-002012:ec41c1875738",
+      "reviewer_a": {"support_status": "pending", "source_quote_verified": null},
+      "reviewer_b": {"support_status": "pending", "source_quote_verified": null},
+      "adjudication": "pending"
+    },
+    {
+      "facet": "limitations",
+      "page_number": 18,
+      "chunk_id": "2510.22344@edee709f8cbf:p0018:003148-003411:2d72db1926a7",
+      "reviewer_a": {"support_status": "pending", "source_quote_verified": null},
+      "reviewer_b": {"support_status": "pending", "source_quote_verified": null},
+      "adjudication": "pending"
+    },
+    {
+      "facet": "limitations",
+      "page_number": 18,
+      "chunk_id": "2510.22344@edee709f8cbf:p0018:001818-002188:a01951c2e2c5",
+      "reviewer_a": {"support_status": "pending", "source_quote_verified": null},
+      "reviewer_b": {"support_status": "pending", "source_quote_verified": null},
+      "adjudication": "pending"
+    }
+  ]
+}

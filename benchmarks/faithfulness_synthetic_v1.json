@@ -1,0 +1,585 @@
+{
+  "suite_id": "faithfulness_synthetic_v1",
+  "annotation_status": "synthetic_regression_not_independent",
+  "cases": [
+    {
+      "case_id": "verbatim_extractive",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_01",
+              "claim": "The proposed method combines a dense retriever with a lexical retriever for evidence selection.",
+              "citations": [
+                {
+                  "evidence_id": "E01",
+                  "quote": "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 1,
+        "rejected": 0,
+        "verbatim": 1
+      }
+    },
+    {
+      "case_id": "supported_paraphrase_unverified",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_01",
+              "claim": "The framework retrieves evidence using both semantic and lexical search methods.",
+              "citations": [
+                {
+                  "evidence_id": "E01",
+                  "quote": "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 1,
+        "rejected": 0,
+        "verbatim": 0
+      }
+    },
+    {
+      "case_id": "negation_inversion_not_detected",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_01",
+              "claim": "The method does not use a dense retriever when searching for evidence.",
+              "citations": [
+                {
+                  "evidence_id": "E01",
+                  "quote": "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 1,
+        "rejected": 0,
+        "verbatim": 0
+      }
+    },
+    {
+      "case_id": "irrelevant_claim_not_detected",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_01",
+              "claim": "The evaluation shows a remarkable improvement in classification accuracy.",
+              "citations": [
+                {
+                  "evidence_id": "E01",
+                  "quote": "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 1,
+        "rejected": 0,
+        "verbatim": 0
+      }
+    },
+    {
+      "case_id": "unsupported_number_rejected",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_01",
+              "claim": "The framework achieved 95 percent accuracy on standard benchmarks.",
+              "citations": [
+                {
+                  "evidence_id": "E01",
+                  "quote": "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 0,
+        "rejected": 1,
+        "verbatim": 0
+      }
+    },
+    {
+      "case_id": "invented_quote_rejected",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_01",
+              "claim": "The method uses both semantic and lexical retrieval in its workflow.",
+              "citations": [
+                {
+                  "evidence_id": "E01",
+                  "quote": "The invented source described an entirely different experimental design."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 0,
+        "rejected": 1,
+        "verbatim": 0
+      }
+    },
+    {
+      "case_id": "cross_facet_rejected",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_01",
+              "claim": "The evaluation considers multiple tasks and reports measured scores on each benchmark.",
+              "citations": [
+                {
+                  "evidence_id": "E02",
+                  "quote": "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 0,
+        "rejected": 1,
+        "verbatim": 0
+      }
+    },
+    {
+      "case_id": "partial_recovery",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_01",
+              "claim": "The proposed method combines a dense retriever with a lexical retriever for evidence selection.",
+              "citations": [
+                {
+                  "evidence_id": "E01",
+                  "quote": "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+                }
+              ]
+            },
+            {
+              "step_id": "retrieve_01",
+              "claim": "The framework achieved 95 percent accuracy on standard benchmarks.",
+              "citations": [
+                {
+                  "evidence_id": "E01",
+                  "quote": "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 1,
+        "rejected": 1,
+        "verbatim": 1
+      }
+    },
+    {
+      "case_id": "empty_abstention",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": []
+        }
+      },
+      "expected": {
+        "accepted": 0,
+        "rejected": 0,
+        "verbatim": 0
+      }
+    },
+    {
+      "case_id": "second_facet_extractive",
+      "bundle": {
+        "plan": [
+          {
+            "id": "retrieve_01",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "retrieval method"
+          },
+          {
+            "id": "retrieve_02",
+            "proposed_tool": "hybrid_retrieval",
+            "search_query": "evaluation"
+          }
+        ],
+        "register": [
+          {
+            "evidence_id": "E01",
+            "step_id": "retrieve_01",
+            "chunk_id": "synthetic-chunk-1",
+            "page_number": 2,
+            "citation": "https://arxiv.org/abs/2510.22344#page=2",
+            "passages": [
+              "The proposed method combines a dense retriever with a lexical retriever for evidence selection."
+            ]
+          },
+          {
+            "evidence_id": "E02",
+            "step_id": "retrieve_02",
+            "chunk_id": "synthetic-chunk-2",
+            "page_number": 3,
+            "citation": "https://arxiv.org/abs/2510.22344#page=3",
+            "passages": [
+              "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+            ]
+          }
+        ],
+        "draft": {
+          "claims": [
+            {
+              "step_id": "retrieve_02",
+              "claim": "The evaluation considers multiple tasks and reports measured scores on each benchmark.",
+              "citations": [
+                {
+                  "evidence_id": "E02",
+                  "quote": "The evaluation considers multiple tasks and reports measured scores on each benchmark."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "expected": {
+        "accepted": 1,
+        "rejected": 0,
+        "verbatim": 1
+      }
+    }
+  ]
+}

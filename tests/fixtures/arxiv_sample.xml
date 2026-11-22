@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+  <title>arXiv Query: search_query=all:retrieval</title>
+  <opensearch:totalResults>134</opensearch:totalResults>
+  <entry>
+    <id>http://arxiv.org/abs/2401.12345v2</id>
+    <updated>2024-01-22T19:30:00Z</updated>
+    <published>2024-01-20T12:00:00Z</published>
+    <title>  Retrieval Augmented
+      Generation: Evaluation </title>
+    <summary>  A study of retrieval and
+      evaluation methods.  </summary>
+    <author><name> Ada Researcher </name></author>
+    <author><name>  Bob Scientist </name></author>
+    <arxiv:primary_category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <arxiv:journal_ref>Proceedings of Example Conference (2024)</arxiv:journal_ref>
+    <link href="http://arxiv.org/abs/2401.12345v2" rel="alternate" type="text/html" />
+    <link href="http://arxiv.org/pdf/2401.12345v2" rel="related" title="pdf" type="application/pdf" />
+  </entry>
+  <entry>
+    <id>https://arxiv.org/abs/hep-th/9901001v1</id>
+    <updated>1999-01-05T00:00:00Z</updated>
+    <published>1999-01-04T00:00:00Z</published>
+    <title>Older research paper</title>
+    <summary>An archived historical abstract.</summary>
+    <author><name>Claire Example</name></author>
+    <category term="hep-th" />
+  </entry>
+</feed>
